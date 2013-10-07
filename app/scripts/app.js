@@ -7,5 +7,5 @@ angular.module('geoludApp', []).
                 .when('/skills', {templateUrl: 'views/skills.html', controller: 'SkillCtrl'})
                 .when('/projects', {templateUrl: 'views/projects.html', controller: 'ProjectCtrl'})
                 .when('/contact', {templateUrl: 'views/contact.html', controller: 'ContactCtrl'});
-          $locationProvider.html5Mode(true);
+          $locationProvider.html5Mode(false);
         }]);
