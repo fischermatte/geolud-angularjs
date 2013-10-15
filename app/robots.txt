@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /usage/
+Disallow: /logs/
+Disallow: /css/
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /resources/
+Sitemap: http://www.geolud.com/sitemap.xml
