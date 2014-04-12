@@ -2,5 +2,5 @@
 
 angular.module('geoludApp')
       .controller('ContactCtrl', function($scope) {
-        $scope.email = "info@geolud.com";
+        $scope.email = "geolud" + "@" + "posteo"  + ".net";
       });

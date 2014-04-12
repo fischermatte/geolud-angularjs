@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('geoludApp', []).
+angular.module('geoludApp', ['ngRoute']).
       config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
           $routeProvider.when('/', {templateUrl: 'views/main.html', controller: 'MainCtrl', title: "Home"})
                 .when('/resume', {templateUrl: 'views/resume.html', controller: 'ResumeCtrl', title: "Résumé"})

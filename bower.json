@@ -2,8 +2,8 @@
   "name": "geolud",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "~1.0.7",
-    "jquery": "~1.8.0"
+      "angular": "~1.2.16",
+      "angular-route": "~1.2.16"
   },
   "devDependencies": {
   }
