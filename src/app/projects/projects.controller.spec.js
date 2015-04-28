@@ -1,22 +1,24 @@
 'use strict';
 
 describe('controllers', function(){
-  var scope;
+  var scope, projects;
 
   beforeEach(module('geolud'));
 
   beforeEach(inject(function($rootScope) {
     scope = $rootScope.$new();
+    projects =[{name: 'P1'}, {name: 'P2'}];
   }));
 
   it('should define more than 5 awesome things', inject(function($controller) {
     expect(scope.awesomeThings).toBeUndefined();
 
-    $controller('MainCtrl', {
-      $scope: scope
+    $controller('ProjectsCtrl', {
+      $scope: scope,
+      projects: projects
     });
 
-    //expect(angular.isArray(scope.awesomeThings)).toBeTruthy();
-    //expect(scope.awesomeThings.length > 5).toBeTruthy();
+    expect(angular.isArray(scope.projects)).toBeTruthy();
+    expect(scope.projects.length > 1).toBeTruthy();
   }));
 });
