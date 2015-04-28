@@ -141,6 +141,16 @@
       "link": "http://www.spiegel.de/"
     },
     "period": "2001",
-    "description": "Flash-based Live Ticker for the Tour de France 2001. Real time stage tracking with maps and profiles."
+    "description": "Flash-based Live Ticker for the Tour de France 2001. Real time stage tracking with maps and profiles.",
+    "links": [
+      {
+        "title": "screenshot 1",
+        "href": "assets/projects/tour/tour_screenshot_overview.png"
+      },
+      {
+        "title": "screenshot 2",
+        "href": "assets/projects/tour/tour_screenshot_etappe.png"
+      }
+    ]
   }
 ]
