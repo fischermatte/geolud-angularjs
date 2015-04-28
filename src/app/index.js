@@ -46,7 +46,8 @@ angular.module('geolud', ['ngResource', 'ui.router'])
       })
       .state('contact', {
         url: '/contact',
-        templateUrl: 'app/contact/contact.html'
+        templateUrl: 'app/contact/contact.html',
+        controller: 'ContactCtrl'
       });
 
     $urlRouterProvider.otherwise('/home');
