@@ -10,7 +10,7 @@ describe('controllers', function(){
     projects =[{name: 'P1'}, {name: 'P2'}];
   }));
 
-  it('should define more than 5 awesome things', inject(function($controller) {
+  it('should define at least 2 projects', inject(function($controller) {
     expect(scope.awesomeThings).toBeUndefined();
 
     $controller('ProjectsCtrl', {

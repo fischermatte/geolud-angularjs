@@ -9,13 +9,13 @@ describe('controllers', function(){
     scope = $rootScope.$new();
   }));
 
-  it('should define more than 5 awesome things', inject(function($controller) {
+  it('should define email', inject(function($controller) {
     expect(scope.awesomeThings).toBeUndefined();
 
     $controller('ContactCtrl', {
       $scope: scope
     });
 
-    expect(angular.isArray(scope.email)).toContain('@');
+    expect(scope.email).toContain('@');
   }));
 });
