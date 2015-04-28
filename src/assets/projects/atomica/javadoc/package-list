@@ -1,0 +1,9 @@
+atomica.logic
+atomica.logic.pathfinding
+atomica.objects
+atomica.ui
+atomica.ui.util
+atomica.ui.util.board
+atomica.ui.util.components
+atomica.ui.util.language
+atomica.util.logging
