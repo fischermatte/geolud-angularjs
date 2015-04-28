@@ -61,5 +61,41 @@
     },
     "period": "2008-2009",
     "description": "Design and implementation of a platform for mobile location-based advertisement services, which enables the delivery of location-relevant advertisements in real time. The platform is a SOA-based enterprise application using Java EE 5 (JPA, JTA, EJB 3, JSF, JMS) and various Open Source Software (CentOS Linux, PosgreSQL/Postgis, GlassFish, Hibernate, Geoserver, OpenLayers). The project was also part of my Master Thesis (final grade: A)."
+  },
+  {
+    "title": "Atomica Game",
+    "client": {
+      "name": "Hagen University",
+      "link": "http://www.fernuni-hagen.de/english"
+    },
+    "period": "2008",
+    "description": "A multi-level board game based on Java Swing. Result of a programming course during summer semester of 2008 (Kurs 01580 Programmierpraktikum)."
+  },
+  {
+    "title": "Cadastral Surveying and Mapping Application",
+    "client": {
+      "name": "ARC-GREENLAB GmbH ",
+      "link": "http://www.arc-greenlab.de/"
+    },
+    "period": "2006-2008",
+    "description": "Integration of a cadastral surveying and mapping application into the ALKIS compliant (German Authoritative Real Estate Information System) land management platform of AED-SICAD. Used technologies were C++, COM, .NET and various DBMS (Oracle, MS SQL Server, MS Access)."
+  },
+  {
+    "title": "Application for Spatial Data Acquisition and Management",
+    "client": {
+      "name": "ARC-GREENLAB GmbH ",
+      "link": "http://www.arc-greenlab.de/"
+    },
+    "period": "2005-2008",
+    "description": "Development of an application that allows users to define their own domain specific geographical data model including management and editing functionality. It is closely integrated into ArcGIS via COM technology. Used technologies were C++, MFC and ATL."
+  },
+  {
+    "title": "True Type Font Converter",
+    "client": {
+      "name": "DHI-WASY GmbH ",
+      "link": "http://www.wasy.de/"
+    },
+    "period": "2006",
+    "description": "Development of a dynamic link library (dll) that provides functionality for true type font conversion into vector geometries. Used technologies were C++, COM and Win32 API. "
   }
 ]
