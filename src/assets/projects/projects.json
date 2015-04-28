@@ -43,5 +43,23 @@
     },
     "period": "2009-2010",
     "description": "Development of a distributed multi-tiered platform for automatic acquisition, conversion and monitoring of environmental data of Switzerland. The platform is based on Java/Spring/JPA/Hibernate running on WebLogic Application Server and Oracle Database. "
+  },
+  {
+    "title": "Drive and Walk Navigation Solutions",
+    "client": {
+      "name": "Nokia Gate 5 GmbH ",
+      "link": "http://europe.nokia.com/explore-services/maps"
+    },
+    "period": "2008-2009",
+    "description": "Development of mobile and web applications for Ovi Maps with a strong focus on drive and walk navigation. Implementation of Rich Internet Applications (RIA) using Web 2.0 technologies (AJAX/JavaScript/XHTML)."
+  },
+  {
+    "title": "Platform for Mobile Location-based Advertising",
+    "client": {
+      "name": "Tieto International",
+      "link": "http://www.tieto.com/"
+    },
+    "period": "2008-2009",
+    "description": "Design and implementation of a platform for mobile location-based advertisement services, which enables the delivery of location-relevant advertisements in real time. The platform is a SOA-based enterprise application using Java EE 5 (JPA, JTA, EJB 3, JSF, JMS) and various Open Source Software (CentOS Linux, PosgreSQL/Postgis, GlassFish, Hibernate, Geoserver, OpenLayers). The project was also part of my Master Thesis (final grade: A)."
   }
 ]
