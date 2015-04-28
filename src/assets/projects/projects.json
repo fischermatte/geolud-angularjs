@@ -15,6 +15,33 @@
       "link": "http://www.unisys.ch/index.htm"
     },
     "period": "2011-2012",
-    "description": "Technologies: Java, Spring, Hibernate, JSF 2, ICEFaces 2, Luscene, Solr, Oracle Weblogic"
+    "description": "Technologies: Java, Spring, Hibernate, JSF, ICEFaces, Luscene, Solr, Oracle Weblogic"
+  },
+  {
+    "title": "Application for Environmental Budgeting, Federal Office for the Environment",
+    "client": {
+      "name": "Unisys Switzerland",
+      "link": "http://www.unisys.ch/index.htm"
+    },
+    "period": "2011",
+    "description": "Technologies: C#, .NET, MS SQL Server, Entity Framework, Ext.NET, ASP.NET, WPF, Team Foundation Server "
+  },
+  {
+    "title": "Inventory Solution for the Swiss Army Museum",
+    "client": {
+      "name": "Unisys Switzerland",
+      "link": "http://www.unisys.ch/index.htm"
+    },
+    "period": "2011",
+    "description": "Technologies: C#, .NET, MS SQL Server, Entity Framework, Ext.NET, ASP.NET, WPF "
+  },
+  {
+    "title": "Swiss Environmental Monitoring Platform",
+    "client": {
+      "name": "Unisys Switzerland",
+      "link": "http://www.unisys.ch/index.htm"
+    },
+    "period": "2009-2010",
+    "description": "Development of a distributed multi-tiered platform for automatic acquisition, conversion and monitoring of environmental data of Switzerland. The platform is based on Java/Spring/JPA/Hibernate running on WebLogic Application Server and Oracle Database. "
   }
 ]
