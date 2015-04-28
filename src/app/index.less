@@ -1,3 +1,8 @@
+@text-color: #222222;
+@link-color: #2200CC;
+@link-color-hover: #990000;
+
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -9,13 +14,13 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 0.95em;
   text-align: center;
-  margin: 0px;
-  color: #222222;
+  margin: 0;
+  color: @text-color;
   background-color: #ffffff;
 }
 
 a {
-  color: #2200CC;
+  color: @link-color;
   text-decoration: none;
 }
 
@@ -29,7 +34,7 @@ a {
 }
 
 header {
-  padding: 30px 0px 15px 0px;
+  padding: 30px 0 15px 0;
   text-align: left;
   border-bottom: 1px solid #000000;
 
@@ -64,11 +69,11 @@ nav {
       a {
         text-decoration: none;
         font-weight: bold;
-        color: #222222;
+        color: @text-color;
       }
 
       a:hover {
-        color: #990000;
+        color: @link-color-hover;
       }
     }
   }
@@ -78,8 +83,8 @@ section {
   padding: 10px 0 20px 0;
 
   ul {
-    margin: 0px 0px 20px 0px;
-    padding: 0px;
+    margin: 0 0 20px 0;
+    padding: 0;
 
     li {
       list-style: none;
