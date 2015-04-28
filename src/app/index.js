@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('geolud', ['ngResource', 'ui.router'])
+angular.module('geolud', ['ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
