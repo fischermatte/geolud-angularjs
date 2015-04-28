@@ -20,8 +20,12 @@ angular.module('geolud', ['ngResource', 'ui.router'])
         templateUrl: 'app/projects/projects.html',
         controller: 'ProjectsCtrl',
         resolve: {
-          projects: function ($http) {
-            return $http({ method: 'GET', url: 'assets/projects/projects.json' });
+          projects: function ($http, $q) {
+            var deferred = $q.defer();
+            $http({method: 'GET', url: 'assets/projects/projects.json'}).then(function (response) {
+              deferred.resolve(response.data);
+            });
+            return deferred.promise;
           }
         }
       })
