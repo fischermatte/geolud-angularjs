@@ -20,27 +20,8 @@ angular.module('geolud', ['ngResource', 'ui.router'])
         templateUrl: 'app/projects/projects.html',
         controller: 'ProjectsCtrl',
         resolve: {
-          projects: function () {
-            return [
-              {
-                title: 'Document Management System for the Federal Office of Migration',
-                client: {
-                  name: 'Unisys Switzerland',
-                  link: 'http://www.unisys.ch/index.htm'
-                },
-                period: '2012-2014',
-                description: 'Technologies: Java, Spring, Hibernate, JPA, JSF, Primefaces, Oracle, Tomcat, CI (Maven, Hudson, Sonar, Nexus, Team Foundation Server) '
-              },
-              {
-                title: 'Digital Archive of the Swiss National Library (e-Helvetica)',
-                client: {
-                  name: 'Unisys Switzerland',
-                  link: 'http://www.unisys.ch/index.htm'
-                },
-                period: '2011-2012',
-                description: 'Technologies: Java, Spring, Hibernate, JSF 2, ICEFaces 2, Luscene, Solr, Oracle Weblogic'
-              }
-            ];
+          projects: function ($http) {
+            return $http({ method: 'GET', url: 'assets/projects/projects.json' });
           }
         }
       })
