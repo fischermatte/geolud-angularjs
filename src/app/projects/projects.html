@@ -2,6 +2,16 @@
 
 <ul>
   <li ng-repeat="project in projects">
-    Name: {{project.name}}
+    <span class="project-title">{{project.title}}</span>,
+    <a class="project-link" href="{{project.client.link}}" target="_blank">{{project.client.name}}</a>
+    <br/>
+    {{project.period}}
+    <a class="project-technology-toggle" href="#"
+       ng-click="project.visible=!project.visible">more...</a>
+    <ul class="project-description" ng-show="project.visible">
+      <li>
+        {{project.description}}
+      </li>
+    </ul>
   </li>
 </ul>
