@@ -9,8 +9,8 @@
 		<homepage href="" />
 		<icon href="atomica_48.png" width="48" height="48" />
 		<icon kind="splash" href="atomica_splash.png" width="300" height="300" />
-		<icon kind="shortcut" href="atomica_32.png" width="32" height="32" kind="default"/>
-		<icon kind="shortcut" href="atomica_16.png" width="16" height="16" kind="default"/>
+		<icon kind="shortcut" href="atomica_32.png" width="32" height="32"/>
+		<icon kind="shortcut" href="atomica_16.png" width="16" height="16"/>
 		<offline-allowed />
 		<shortcut online="true">
 			<desktop />

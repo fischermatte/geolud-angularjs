@@ -69,7 +69,25 @@
       "link": "http://www.fernuni-hagen.de/english"
     },
     "period": "2008",
-    "description": "A multi-level board game based on Java Swing. Result of a programming course during summer semester of 2008 (Kurs 01580 Programmierpraktikum)."
+    "description": "A multi-level board game based on Java Swing. Result of a programming course during summer semester of 2008 (Kurs 01580 Programmierpraktikum).",
+    "links": [
+      {
+        "title": "run",
+        "href": "assets/projects/atomica/webstart/launch.jnlp"
+      },
+      {
+        "title": "source",
+        "href": "assets/projects/atomica/atomica_ludewig_georg.zip"
+      },
+      {
+        "title": "javadoc",
+        "href": "assets/projects/atomica/javadoc/index.html"
+      },
+      {
+        "title": "documentation",
+        "href": "assets/projects/atomica/atomica_documentation_ludewig.pdf"
+      }
+    ]
   },
   {
     "title": "Cadastral Surveying and Mapping Application",
@@ -132,7 +150,17 @@
       "link": "http://www.deutsch-russisches-forum.de/"
     },
     "period": "2004",
-    "description": "A Flash-based map with information about Russian-German town twinning. Used technologies: XML, Adobe Flash, ActionScript."
+    "description": "A Flash-based map with information about Russian-German town twinning. Used technologies: XML, Adobe Flash, ActionScript.",
+    "links": [
+      {
+        "title": "screenshot 1",
+        "href": "assets/projects/twin/screenshot_germany.png"
+      },
+      {
+        "title": "screenshot 2",
+        "href": "assets/projects/twin/screenshot_russia.png"
+      }
+    ]
   },
   {
     "title": "Live Ticker Tour de France 2001",
