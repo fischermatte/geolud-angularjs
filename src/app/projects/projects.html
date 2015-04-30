@@ -7,13 +7,14 @@
     <br/>
     {{project.period}}
     <div class="project-technology-toggle"
-       ng-click="project.visible=!project.visible">more...</div>
+         ng-click="project.visible=!project.visible">more...
+    </div>
     <ul class="project-description" ng-show="project.visible">
       <li>
         <div class="project-description-text">{{project.description}}</div>
         <div class="project-description-link" ng-repeat="link in project.links">
-          <a href="{{link.href}}" target="_blank"> {{link.title}} </a>
-          <span ng-show="!$last"> | </span>
+          <a href="{{link.href}}" target="_blank">{{link.title}}</a>
+          <span ng-show="!$last">|&nbsp;</span>
         </div>
       </li>
     </ul>

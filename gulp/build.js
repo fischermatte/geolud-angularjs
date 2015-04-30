@@ -72,8 +72,16 @@ module.exports = function(options) {
       .pipe(gulp.dest(options.dist + '/fonts/'));
   });
 
+  gulp.task('assets', function () {
+    return gulp.src([
+      options.src + '/assets/**'
+    ])
+      .pipe(gulp.dest(options.dist + '/assets'));
+  });
+
   gulp.task('other', function () {
     return gulp.src([
+      '!' + options.src + '/assets/**',
       options.src + '/**/*',
       '!' + options.src + '/**/*.{html,css,js,less}'
     ])
@@ -84,5 +92,5 @@ module.exports = function(options) {
     $.del([options.dist + '/', options.tmp + '/'], done);
   });
 
-  gulp.task('build', ['html', 'fonts', 'other']);
+  gulp.task('build', ['html', 'fonts', 'assets', 'other']);
 };
