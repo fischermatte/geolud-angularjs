@@ -1,0 +1,9 @@
+com.geolud.atomica.logic
+com.geolud.atomica.logic.pathfinding
+com.geolud.atomica.objects
+com.geolud.atomica.ui
+com.geolud.atomica.ui.util
+com.geolud.atomica.ui.util.board
+com.geolud.atomica.ui.util.components
+com.geolud.atomica.ui.util.language
+com.geolud.atomica.util.logging
