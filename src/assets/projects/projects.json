@@ -63,10 +63,10 @@
     "description": "Technologies: Java, Spring, Hibernate, JSF, ICEFaces, Luscene, Solr, Oracle Weblogic"
   },
   {
-    "title": "Application for Environmental Budgeting, Federal Office for the Environment",
+    "title": "Application for Environmental Budgeting",
     "client": {
-      "name": "Unisys Switzerland",
-      "link": "http://www.unisys.ch/index.htm"
+      "name": "Federal Office for the Environment FOEN",
+      "link": "http://www.bafu.admin.ch/?lang=en"
     },
     "period": "2011",
     "description": "Technologies: C#, .NET, MS SQL Server, Entity Framework, Ext.NET, ASP.NET, WPF, Team Foundation Server "
@@ -74,8 +74,8 @@
   {
     "title": "Inventory Solution for the Swiss Army Museum",
     "client": {
-      "name": "Unisys Switzerland",
-      "link": "http://www.unisys.ch/index.htm"
+      "name": "Stiftung HAM",
+      "link": "http://www.stiftung-ham.ch/"
     },
     "period": "2011",
     "description": "Technologies: C#, .NET, MS SQL Server, Entity Framework, Ext.NET, ASP.NET, WPF "
