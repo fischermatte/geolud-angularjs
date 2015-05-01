@@ -6,10 +6,10 @@
     <a class="project-link" href="{{project.client.link}}" target="_blank">{{project.client.name}}</a>
     <br/>
     {{project.period}}
-    <div class="project-technology-toggle"
+    <div class="project-technology-toggle" ng-show="!!project.description"
          ng-click="project.visible=!project.visible">more...
     </div>
-    <ul class="project-description" ng-show="project.visible">
+    <ul class="project-description" ng-show="project.visible" ng-click="project.visible=false">
       <li>
         <div class="project-description-text">{{project.description}}</div>
         <div class="project-description-link" ng-repeat="link in project.links">

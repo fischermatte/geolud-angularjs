@@ -1,18 +1,63 @@
 [
   {
-    "title": "Document Management System for the Federal Office of Migration",
+    "title": "Swiss Online Voting System (e-Voting)",
     "client": {
       "name": "Unisys Switzerland",
       "link": "http://www.unisys.ch/index.htm"
     },
-    "period": "2012-2014",
+    "period": "2014",
+    "description": "Technologies: AngularJS, Bootstrap, HTML 5, JavaScript, CSS, Java, Spring, Spring Security, Tomcat"
+  },
+  {
+    "title": "Swiss Voting and Election Administration System",
+    "client": {
+      "name": "Unisys Switzerland",
+      "link": "http://www.unisys.ch/index.htm"
+    },
+    "period": "2014",
+    "description": "Technologies: AngularJS, Bootstrap, HTML 5, JavaScript, CSS, Java, Spring, Spring Security, Tomcat"
+  },
+  {
+    "title": "Mehrwertsteuer Online Einreichen",
+    "client": {
+      "name": "Swiss Federal Tax Administration FTA",
+      "link": "http://www.estv.admin.ch/index.html?lang=en"
+    },
+    "period": "2014",
+    "description": "Technologies: AngularJS, Bootstrap, HTML 5, Javascript, CSS, Java, Spring, Spring Security, JPA/Hibernate, JSF/Primefaces, Maven, Jenkins, Sonar, Nexus"
+  },
+  {
+    "title": "Applikationsplattform Verbraucherschutz",
+    "client": {
+      "name": "Swiss Federal Office of Public Health FOPH",
+      "link": "http://www.bag.admin.ch/index.html?lang=en"
+    },
+    "period": "2013-2014",
+    "description": "Technologies: Java, Spring, Spring Security, JPA/Hibernate, JSF/Primefaces, HTML/JS/CSS, Maven, Jenkins, Sonar, Nexus."
+  },
+  {
+    "title": "Country of Origin Information System",
+    "client": {
+      "name": "Swiss Federal Office of Migration FOM",
+      "link": "https://www.bfm.admin.ch/bfm/en/home.html"
+    },
+    "period": "2012-2013",
     "description": "Technologies: Java, Spring, Hibernate, JPA, JSF, Primefaces, Oracle, Tomcat, CI (Maven, Hudson, Sonar, Nexus, Team Foundation Server) "
+  },
+  {
+    "title": "Interpreter Administration System (DOPO)",
+    "client": {
+      "name": "Swiss Federal Office of Migration FOM",
+      "link": "https://www.bfm.admin.ch/bfm/en/home.html"
+    },
+    "period": "2013",
+    "description": "Technologies: Java, Spring, JPA/Hibernate, JSF, Maven."
   },
   {
     "title": "Digital Archive of the Swiss National Library (e-Helvetica)",
     "client": {
-      "name": "Unisys Switzerland",
-      "link": "http://www.unisys.ch/index.htm"
+      "name": "Swiss National Library",
+      "link": "https://www.nb.admin.ch/?lang=en"
     },
     "period": "2011-2012",
     "description": "Technologies: Java, Spring, Hibernate, JSF, ICEFaces, Luscene, Solr, Oracle Weblogic"
