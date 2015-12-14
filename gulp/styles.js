@@ -7,7 +7,7 @@ var $ = require('gulp-load-plugins')();
 
 var wiredep = require('wiredep').stream;
 
-module.exports = function(options) {
+module.exports = function (options) {
   gulp.task('styles', function () {
     var lessOptions = {
       options: [
@@ -20,10 +20,10 @@ module.exports = function(options) {
       options.src + '/app/**/*.less',
       '!' + options.src + '/app/index.less',
       '!' + options.src + '/app/vendor.less'
-    ], { read: false });
+    ], {read: false});
 
     var injectOptions = {
-      transform: function(filePath) {
+      transform: function (filePath) {
         filePath = filePath.replace(options.src + '/app/', '');
         return '@import \'' + filePath + '\';';
       },
@@ -32,24 +32,24 @@ module.exports = function(options) {
       addRootSlash: false
     };
 
-    var indexFilter = $.filter('index.less');
-    var vendorFilter = $.filter('vendor.less');
+    var indexFilter = $.filter('index.less', {restore: true});
+    var vendorFilter = $.filter('vendor.less', {restore: true});
 
     return gulp.src([
-      options.src + '/app/index.less',
-      options.src + '/app/vendor.less'
-    ])
+        options.src + '/app/index.less',
+        options.src + '/app/vendor.less'
+      ])
       .pipe(indexFilter)
       .pipe($.inject(injectFiles, injectOptions))
-      .pipe(indexFilter.restore())
+      .pipe(indexFilter.restore)
       .pipe(vendorFilter)
       .pipe(wiredep(options.wiredep))
-      .pipe(vendorFilter.restore())
+      .pipe(vendorFilter.restore)
       .pipe($.sourcemaps.init())
       .pipe($.less(lessOptions)).on('error', options.errorHandler('Less'))
       .pipe($.autoprefixer()).on('error', options.errorHandler('Autoprefixer'))
       .pipe($.sourcemaps.write())
       .pipe(gulp.dest(options.tmp + '/serve/app/'))
-      .pipe(browserSync.reload({ stream: true }));
+      .pipe(browserSync.reload({stream: true}));
   });
 };

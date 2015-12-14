@@ -6,12 +6,12 @@ var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
 });
 
-module.exports = function(options) {
+module.exports = function (options) {
   gulp.task('partials', function () {
     return gulp.src([
-      options.src + '/app/**/*.html',
-      options.tmp + '/serve/app/**/*.html'
-    ])
+        options.src + '/app/**/*.html',
+        options.tmp + '/serve/app/**/*.html'
+      ])
       .pipe($.minifyHtml({
         empty: true,
         spare: true,
@@ -25,16 +25,16 @@ module.exports = function(options) {
   });
 
   gulp.task('html', ['inject', 'partials'], function () {
-    var partialsInjectFile = gulp.src(options.tmp + '/partials/templateCacheHtml.js', { read: false });
+    var partialsInjectFile = gulp.src(options.tmp + '/partials/templateCacheHtml.js', {read: false});
     var partialsInjectOptions = {
       starttag: '<!-- inject:partials -->',
       ignorePath: options.tmp + '/partials',
       addRootSlash: false
     };
 
-    var htmlFilter = $.filter('*.html');
-    var jsFilter = $.filter('**/*.js');
-    var cssFilter = $.filter('**/*.css');
+    var htmlFilter = $.filter('*.html', {restore: true});
+    var jsFilter = $.filter('**/*.js', {restore: true});
+    var cssFilter = $.filter('**/*.css', {restore: true});
     var assets;
 
     return gulp.src(options.tmp + '/serve/*.html')
@@ -43,11 +43,11 @@ module.exports = function(options) {
       .pipe($.rev())
       .pipe(jsFilter)
       .pipe($.ngAnnotate())
-      .pipe($.uglify({ preserveComments: $.uglifySaveLicense })).on('error', options.errorHandler('Uglify'))
-      .pipe(jsFilter.restore())
+      .pipe($.uglify({preserveComments: $.uglifySaveLicense})).on('error', options.errorHandler('Uglify'))
+      .pipe(jsFilter.restore)
       .pipe(cssFilter)
       .pipe($.csso())
-      .pipe(cssFilter.restore())
+      .pipe(cssFilter.restore)
       .pipe(assets.restore())
       .pipe($.useref())
       .pipe($.revReplace())
@@ -58,9 +58,9 @@ module.exports = function(options) {
         quotes: true,
         conditionals: true
       }))
-      .pipe(htmlFilter.restore())
+      .pipe(htmlFilter.restore)
       .pipe(gulp.dest(options.dist + '/'))
-      .pipe($.size({ title: options.dist + '/', showFiles: true }));
+      .pipe($.size({title: options.dist + '/', showFiles: true}));
   });
 
   // Only applies for fonts from bower dependencies
@@ -74,17 +74,17 @@ module.exports = function(options) {
 
   gulp.task('assets', function () {
     return gulp.src([
-      options.src + '/assets/**/*'
-    ])
+        options.src + '/assets/**/*'
+      ])
       .pipe(gulp.dest(options.dist + '/assets'));
   });
 
   gulp.task('other', function () {
     return gulp.src([
-      '!' + options.src + '/assets/**',
-      options.src + '/**/*',
-      '!' + options.src + '/**/*.{html,css,js,less}'
-    ])
+        '!' + options.src + '/assets/**',
+        options.src + '/**/*',
+        '!' + options.src + '/**/*.{html,css,js,less}'
+      ])
       .pipe(gulp.dest(options.dist + '/'));
   });
 
