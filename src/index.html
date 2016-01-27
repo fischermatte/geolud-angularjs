@@ -36,19 +36,19 @@
     <nav>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a ui-sref="home" ng-class="{ active: $state.is('home') }">Home</a>
         </li>
         <li>
-          <a href="#resume">Résumé</a>
+          <a ui-sref="resume" ng-class="{ active: $state.is('resume') }">Résumé</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a ui-sref="skills" ng-class="{ active: $state.is('skills') }">Skills</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a ui-sref="projects" ng-class="{ active: $state.is('projects') }">Projects</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a ui-sref="contact" ng-class="{ active: $state.is('contact') }">Contact</a>
         </li>
       </ul>
     </nav>

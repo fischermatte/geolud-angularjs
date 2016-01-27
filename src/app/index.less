@@ -1,6 +1,20 @@
-@text-color: #222222;
+@text-color: #222;
 @link-color: #2200CC;
-@link-color-hover: #990000;
+@link-color-hover: #000;
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-style: normal;
+  src:  url('/fonts/Noto-Serif-regular.eot');
+  src:  url('/fonts/Noto-Serif-regular.eot?#iefix') format('embedded-opentype'),
+        local('Noto Serif'),
+        local('Noto-Serif-regular'),
+        url('/fonts/Noto-Serif-regular.woff2') format('woff2'),
+        url('/fonts/Noto-Serif-regular.woff') format('woff'),
+        url('/fonts/Noto-Serif-regular.ttf') format('truetype'),
+        url('/fonts/Noto-Serif-regular.svg#NotoSerif') format('svg');
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -10,8 +24,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 0.95em;
+  font-family: 'Noto Serif', Times, serif;
   text-align: center;
   margin: 0;
   color: @text-color;
@@ -27,9 +40,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
-  min-width: 400px;
+  min-width: 575px;
   text-align: left;
   width: 75%;
+  padding: 0 15px;
 }
 
 header {
@@ -52,7 +66,6 @@ nav {
   padding: 10px 0 0 0;
   text-align: right;
   width: 100%;
-  font-size: 0.9em;
 
   ul {
     margin: 0;
@@ -60,21 +73,27 @@ nav {
 
     li {
       margin: 0;
-      padding: 0;
+      //padding: 0 15px 0 0;
       list-style: none;
       display: inline;
-      padding-left: 15px;
 
       a {
+        border-radius: 4px 4px 1px 1px;
         text-decoration: none;
-        font-weight: bold;
         color: @text-color;
+        padding: 15px;
       }
 
       a:hover {
+        .active;
+      }
+
+      .active {
         color: @link-color-hover;
+        background-color: #f2f2f2;
       }
     }
+
   }
 }
 

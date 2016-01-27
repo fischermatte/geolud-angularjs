@@ -63,13 +63,11 @@ module.exports = function (options) {
       .pipe($.size({title: options.dist + '/', showFiles: true}));
   });
 
-  // Only applies for fonts from bower dependencies
-  // Custom fonts are handled by the "other" task
   gulp.task('fonts', function () {
-    return gulp.src($.mainBowerFiles())
-      .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
-      .pipe($.flatten())
-      .pipe(gulp.dest(options.dist + '/fonts/'));
+    return gulp.src([
+        options.src + '/fonts/**/*'
+      ])
+      .pipe(gulp.dest(options.dist + '/fonts'));
   });
 
   gulp.task('assets', function () {
