@@ -5,7 +5,7 @@ angular.module('geolud', ['ui.router'])
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'app/main/main.html'
+        templateUrl: 'app/home/home.html'
       })
       .state('resume', {
         url: '/resume',
@@ -20,12 +20,10 @@ angular.module('geolud', ['ui.router'])
         templateUrl: 'app/projects/projects.html',
         controller: 'ProjectsCtrl',
         resolve: {
-          projects: function ($http, $q) {
-            var deferred = $q.defer();
-            $http({method: 'GET', url: 'assets/projects/projects.json'}).then(function (response) {
-              deferred.resolve(response.data);
+          projects: function ($http) {
+            return $http({method: 'GET', url: 'assets/projects/projects.json'}).then(function (response) {
+              return response.data;
             });
-            return deferred.promise;
           }
         }
       })

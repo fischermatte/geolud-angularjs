@@ -9,7 +9,7 @@ var karma = require('karma');
 var concat = require('concat-stream');
 var _ = require('lodash');
 
-module.exports = function(options) {
+module.exports = function (options) {
   function listFiles(callback) {
     var wiredepOptions = _.extend({}, options.wiredep, {
       dependencies: true,
@@ -28,35 +28,35 @@ module.exports = function(options) {
 
     var srcFiles = [
       options.src + '/app/**/*.js'
-    ].concat(specFiles.map(function(file) {
+    ].concat(specFiles.map(function (file) {
       return '!' + file;
     }));
 
 
     gulp.src(srcFiles)
-      .pipe(concat(function(files) {
+      .pipe(concat(function (files) {
         callback(bowerDeps.js
-          .concat(_.pluck(files, 'path'))
+          .concat(_.map(files, 'path'))
           .concat(htmlFiles)
           .concat(specFiles));
       }));
   }
 
-  function runTests (singleRun, done) {
-    listFiles(function(files) {
-      karma.server.start({
+  function runTests(singleRun, done) {
+    listFiles(function (files) {
+      new karma.Server({
         configFile: __dirname + '/../karma.conf.js',
         files: files,
         singleRun: singleRun,
         autoWatch: !singleRun
-      }, done);
+      }, done).start();
     });
   }
 
-  gulp.task('test', ['scripts'], function(done) {
+  gulp.task('test', ['scripts'], function (done) {
     runTests(true, done);
   });
-  gulp.task('test:auto', ['watch'], function(done) {
+  gulp.task('test:auto', ['watch'], function (done) {
     runTests(false, done);
   });
 };
