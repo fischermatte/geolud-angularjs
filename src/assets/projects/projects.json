@@ -101,8 +101,8 @@
   {
     "title": "Drive and Walk Navigation Solutions",
     "client": {
-      "name": "Nokia Gate 5 GmbH ",
-      "link": "http://europe.nokia.com/explore-services/maps"
+      "name": "Nokia Gate 5 GmbH (now HERE)",
+      "link": "https://here.com"
     },
     "period": "2008-2009",
     "description": "Development of mobile and web applications for Nokia Maps with a strong focus on drive and walk navigation. Implementation of Rich Internet Applications (RIA) using Web 2.0 technologies (AJAX/JavaScript/XHTML)."
