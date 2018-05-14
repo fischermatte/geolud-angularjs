@@ -1,5 +1,5 @@
-geolud.com 
-==========
+geolud.com (deprecated, AngularJS)
+==================================
 
 [![Build Status](https://travis-ci.org/fischermatte/geolud.svg?branch=master)](https://travis-ci.org/fischermatte/geolud)
 
